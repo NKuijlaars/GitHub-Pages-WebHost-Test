@@ -6,9 +6,10 @@ body, html {
     height: 100%;
 }
 
-/* Full-page cover image */
+/* Container with placeholder */
 .container {
-    background-image: url('base.png'); /* Replace with your image URL */
+	background: #000;
+    background-image: url('baseTiny2.jpg'); /* Low-res placeholder */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -18,15 +19,20 @@ body, html {
     align-items: center;
 }
 
+/* High-res background class */
+.container.loaded {
+    background-image: url('base.png'); /* High-res background image*/
+}
+
 /* Centered text style */
-
-
 .ballet-centered {
-  font-family: "Ballet", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
+	font-family: "Ballet", cursive;
+	/*font-optical-sizing: auto;*/
+	font-size: 5rem;
+	font-weight: 400;
+	color: white;
+	font-style: normal;
+	margin: 0;
 }
 .centered-text {
     font-family: 'Dancing Script', cursive;

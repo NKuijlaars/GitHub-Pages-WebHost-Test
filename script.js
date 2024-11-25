@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     const container = document.getElementById('container');
 
     // Preload the high-resolution image
@@ -6,5 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     highResImage.src = 'base.png'; // Replace with your high-res image
     highResImage.onload = () => {
         container.classList.add('loaded'); // Add 'loaded' class once the image is ready
-    };
+    }else {
+        console.error('Container element not found!');
+    }
 });

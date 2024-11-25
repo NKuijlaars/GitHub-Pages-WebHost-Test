@@ -19,6 +19,15 @@ body, html {
 }
 
 /* Centered text style */
+
+
+.ballet-centered {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
 .centered-text {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
